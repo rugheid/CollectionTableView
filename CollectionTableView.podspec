@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CollectionTableView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of CollectionTableView.'
+  s.summary          = 'CollectionTableView represents a table view where each row contains a horizontal scrolling collection view.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
