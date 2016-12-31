@@ -221,7 +221,7 @@ import UIKit
         _ indexPath: IndexPath,
         collectionView: UICollectionView)
         -> IndexPath {
-            return IndexPath(item: (indexPath as NSIndexPath).row, section: collectionView.tag)
+            return IndexPath(item: indexPath.row, section: collectionView.tag)
     }
     
     /**
@@ -316,7 +316,7 @@ extension CollectionTableView: UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let section = (indexPath as NSIndexPath).section
+        let section = indexPath.section
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CollectionViewCell
         
         cell.registerNibsAndClassesForIdentifiers(
