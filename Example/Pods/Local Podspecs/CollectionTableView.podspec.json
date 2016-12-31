@@ -1,0 +1,22 @@
+{
+  "name": "CollectionTableView",
+  "version": "0.1.0",
+  "summary": "CollectionTableView represents a table view where each row contains a horizontal scrolling collection view.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/CollectionTableView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Rugen Heidbuchel": "rugen.heidbuchel@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/CollectionTableView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CollectionTableView/Classes/**/*"
+}

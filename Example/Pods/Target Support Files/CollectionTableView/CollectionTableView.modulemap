@@ -1,0 +1,6 @@
+framework module CollectionTableView {
+  umbrella header "CollectionTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}
