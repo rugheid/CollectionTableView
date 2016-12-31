@@ -197,6 +197,21 @@ import UIKit
     }
     
     
+    // MARK: Reloading Data
+    
+    public func reloadData() {
+        self.tableView.reloadData()
+    }
+    
+    public func reloadSections(_ sections: IndexSet, with animation: UITableViewRowAnimation) {
+        self.tableView.reloadSections(sections, with: animation)
+    }
+    
+    public func reloadSectionIndexTitles() {
+        self.tableView.reloadSectionIndexTitles()
+    }
+    
+    
     // MARK: - Private Helpers
     
     /**
