@@ -14,6 +14,9 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		9892EF201E17F213006616A3 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9892EF1E1E17F213006616A3 /* Cell.swift */; };
+		9892EF211E17F213006616A3 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9892EF1F1E17F213006616A3 /* Cell.xib */; };
+		9892EF231E17F21B006616A3 /* planckendael_main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9892EF221E17F21B006616A3 /* planckendael_main.jpg */; };
 		9FCC6880CF869DB6095A69F7 /* Pods_CollectionTableView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE66B77FAFB396F1ECCD88E6 /* Pods_CollectionTableView_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +47,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		953982C151F1B97A54B487D3 /* CollectionTableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CollectionTableView.podspec; path = ../CollectionTableView.podspec; sourceTree = "<group>"; };
+		9892EF1E1E17F213006616A3 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		9892EF1F1E17F213006616A3 /* Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
+		9892EF221E17F21B006616A3 /* planckendael_main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = planckendael_main.jpg; sourceTree = "<group>"; };
 		BE66B77FAFB396F1ECCD88E6 /* Pods_CollectionTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectionTableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D578BE0A327B4FD8791A95 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D292F19F12CAC4E9D3C9E2FC /* Pods_CollectionTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollectionTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,8 +110,11 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				9892EF1E1E17F213006616A3 /* Cell.swift */,
+				9892EF1F1E17F213006616A3 /* Cell.xib */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				9892EF221E17F21B006616A3 /* planckendael_main.jpg */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -249,6 +258,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				9892EF231E17F21B006616A3 /* planckendael_main.jpg in Resources */,
+				9892EF211E17F213006616A3 /* Cell.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -363,6 +374,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				9892EF201E17F213006616A3 /* Cell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
