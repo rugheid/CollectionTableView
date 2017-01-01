@@ -86,8 +86,6 @@ import UIKit
         super.prepareForInterfaceBuilder()
         
         self.tableView.frame = self.frame
-        self.layer.borderWidth = 2.0
-        self.layer.borderColor = UIColor.blue.cgColor
     }
     
     
@@ -105,7 +103,8 @@ import UIKit
         return self.tableView.numberOfSections
     }
     
-    open var rowHeight: CGFloat {
+    @IBInspectable
+    open var sectionHeight: CGFloat {
         get {
             return self.tableView.rowHeight
         }
@@ -123,6 +122,7 @@ import UIKit
         }
     }
     
+    @IBInspectable
     open var separatorColor: UIColor? {
         get {
             return self.tableView.separatorColor
@@ -161,10 +161,12 @@ import UIKit
     
     open var itemSize: CGSize = CGSize(width: 50, height: 50)
     
+    @IBInspectable
     open var sectionBackgroundColor: UIColor? = nil
     
     open var sectionInset: UIEdgeInsets = UIEdgeInsets()
     
+    @IBInspectable
     open var minimumLineSpacing: CGFloat = 10
     
     
