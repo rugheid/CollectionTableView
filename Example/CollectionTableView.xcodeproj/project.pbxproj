@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		988FC4131E1B050C00C90303 /* ExampleCollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FC4121E1B050C00C90303 /* ExampleCollectionTableViewController.swift */; };
 		9892EF201E17F213006616A3 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9892EF1E1E17F213006616A3 /* Cell.swift */; };
 		9892EF211E17F213006616A3 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9892EF1F1E17F213006616A3 /* Cell.xib */; };
 		9892EF231E17F21B006616A3 /* planckendael_main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9892EF221E17F21B006616A3 /* planckendael_main.jpg */; };
@@ -47,6 +48,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		953982C151F1B97A54B487D3 /* CollectionTableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CollectionTableView.podspec; path = ../CollectionTableView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		988FC4121E1B050C00C90303 /* ExampleCollectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCollectionTableViewController.swift; sourceTree = "<group>"; };
 		9892EF1E1E17F213006616A3 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		9892EF1F1E17F213006616A3 /* Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 		9892EF221E17F21B006616A3 /* planckendael_main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = planckendael_main.jpg; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				988FC4121E1B050C00C90303 /* ExampleCollectionTableViewController.swift */,
 				9892EF1E1E17F213006616A3 /* Cell.swift */,
 				9892EF1F1E17F213006616A3 /* Cell.xib */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -372,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				988FC4131E1B050C00C90303 /* ExampleCollectionTableViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				9892EF201E17F213006616A3 /* Cell.swift in Sources */,

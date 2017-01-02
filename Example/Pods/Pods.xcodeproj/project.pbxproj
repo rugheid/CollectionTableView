@@ -95,6 +95,7 @@
 		983E37161E17CF1500E9E8EC /* CollectionTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983E37121E17CF1500E9E8EC /* CollectionTableViewDataSource.swift */; };
 		983E37171E17CF1500E9E8EC /* CollectionTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983E37131E17CF1500E9E8EC /* CollectionTableViewDelegate.swift */; };
 		983E37181E17CF1500E9E8EC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983E37141E17CF1500E9E8EC /* CollectionViewCell.swift */; };
+		988FC4111E1B01CF00C90303 /* CollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FC4101E1B01CF00C90303 /* CollectionTableViewController.swift */; };
 		9954CB54947985ED49530B9A56CDA169 /* XCTestSuite+QuickTestSuiteBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B35075C2C09AD9E7FB16BE3C249DB9 /* XCTestSuite+QuickTestSuiteBuilder.m */; };
 		99D78691DDFCC91D33EF911FCFABFE46 /* QCKDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED7B23AEE06C44713BF4D8166463FD4 /* QCKDSL.m */; };
 		9AF235C16362BA00BFBF12147907E953 /* BeEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ED7EE1C5006B7C2FC9931DAC233884 /* BeEmpty.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -322,6 +323,7 @@
 		983E37121E17CF1500E9E8EC /* CollectionTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionTableViewDataSource.swift; sourceTree = "<group>"; };
 		983E37131E17CF1500E9E8EC /* CollectionTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionTableViewDelegate.swift; sourceTree = "<group>"; };
 		983E37141E17CF1500E9E8EC /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		988FC4101E1B01CF00C90303 /* CollectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionTableViewController.swift; sourceTree = "<group>"; };
 		9963EE7CC8E08B315A80570158907487 /* World.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = World.h; path = Sources/QuickObjectiveC/World.h; sourceTree = "<group>"; };
 		9B77E4AE45199880A84F86B1D1422B2C /* Pods-CollectionTableView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CollectionTableView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9ED7B23AEE06C44713BF4D8166463FD4 /* QCKDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QCKDSL.m; path = Sources/QuickObjectiveC/DSL/QCKDSL.m; sourceTree = "<group>"; };
@@ -491,6 +493,7 @@
 		1EE974EC4A0973340D8772859254A794 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				988FC4101E1B01CF00C90303 /* CollectionTableViewController.swift */,
 				983E37111E17CF1500E9E8EC /* CollectionTableView.swift */,
 				983E37121E17CF1500E9E8EC /* CollectionTableViewDataSource.swift */,
 				983E37131E17CF1500E9E8EC /* CollectionTableViewDelegate.swift */,
@@ -1206,6 +1209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				983E37181E17CF1500E9E8EC /* CollectionViewCell.swift in Sources */,
+				988FC4111E1B01CF00C90303 /* CollectionTableViewController.swift in Sources */,
 				983E37161E17CF1500E9E8EC /* CollectionTableViewDataSource.swift in Sources */,
 				983E37171E17CF1500E9E8EC /* CollectionTableViewDelegate.swift in Sources */,
 				983E37151E17CF1500E9E8EC /* CollectionTableView.swift in Sources */,

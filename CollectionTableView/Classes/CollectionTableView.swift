@@ -18,7 +18,7 @@ import UIKit
     // MARK: Properties
     
     /// The internal table view.
-    fileprivate var tableView: UITableView!
+    internal var tableView: UITableView!
     
     /// The delegate of the sectioned table view.
     open var delegate: CollectionTableViewDelegate?
