@@ -20,6 +20,9 @@ import UIKit
     /// The internal table view.
     internal var tableView: UITableView!
     
+    /// An array to keep of the collection views for every section
+    fileprivate var collectionViews: [UICollectionView?] = []
+    
     /// The delegate of the sectioned table view.
     open var delegate: CollectionTableViewDelegate?
     
@@ -222,9 +225,7 @@ import UIKit
      - parameter section: The section index.
      */
     fileprivate func collectionViewForSection(_ section: Int) -> UICollectionView? {
-        let tableIndexPath = IndexPath(row: 0, section: section)
-        let collectionViewCell = self.tableView.cellForRow(at: tableIndexPath) as? CollectionViewCell
-        return collectionViewCell?.collectionView
+        return self.collectionViews[section]
     }
     
     /**
@@ -307,7 +308,9 @@ extension CollectionTableView: UITableViewDelegate {
 extension CollectionTableView: UITableViewDataSource {
     
     public func numberOfSections(in tableView: UITableView) -> Int {
-        return self.dataSource?.numberOfSectionsInCollectionSectionedTableView?(self) ?? 1
+        let nrOfSections = self.dataSource?.numberOfSectionsInCollectionSectionedTableView?(self) ?? 1
+        self.collectionViews = Array<UICollectionView?>(repeating: nil, count: nrOfSections)
+        return nrOfSections
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -335,6 +338,7 @@ extension CollectionTableView: UITableViewDataSource {
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let section = indexPath.section
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CollectionViewCell
+        self.collectionViews[section] = cell.collectionView
         
         cell.registerNibsAndClassesForIdentifiers(
             self.registeredNibsAndClasses,
