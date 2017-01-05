@@ -274,30 +274,30 @@ extension CollectionTableView: UITableViewDelegate {
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
+        let section = (indexPath as NSIndexPath).row
+        
+        var maxItemHeight = self.itemSize.height
         if let sizeClosure = self.delegate?.collectionTableView(_:sizeForItemAtIndexPath:) {
-            
-            let section = (indexPath as NSIndexPath).row
+
             let numberOfItems = self.dataSource!.collectionTableView(
                 self,
                 numberOfItemsInSection: section)
             
-            var maxHeight: CGFloat = 0
-            
             for index in 0 ..< numberOfItems {
                 let realIndexPath = IndexPath(item: index, section: section)
                 let size = sizeClosure(self, realIndexPath)
-                maxHeight = max(maxHeight, size.height)
+                maxItemHeight = max(maxItemHeight, size.height)
             }
-            
-            let sectionInset = self.delegate?.collectionTableView?(self, insetForSectionAtIndex: section)
-                ?? self.sectionInset
-            
-            return maxHeight + sectionInset.top + sectionInset.bottom
             
         } else {
             
             return self.itemSize.height
         }
+        
+        let sectionInset = self.delegate?.collectionTableView?(self, insetForSectionAtIndex: section)
+            ?? self.sectionInset
+        
+        return maxItemHeight + sectionInset.top + sectionInset.bottom
     }
 }
 
