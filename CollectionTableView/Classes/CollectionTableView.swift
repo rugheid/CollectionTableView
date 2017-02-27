@@ -390,6 +390,32 @@ extension CollectionTableView: UICollectionViewDelegateFlowLayout {
 }
 
 
+// MARK: UICollectionViewDelegate
+
+extension CollectionTableView: UICollectionViewDelegate {
+    
+    public func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        let realIndexPath = realIndexPathForCollectionView(indexPath, collectionView: collectionView)
+        return self.delegate?.collectionTableView?(self, shouldSelectItemAt: realIndexPath) ?? true
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let realIndexPath = realIndexPathForCollectionView(indexPath, collectionView: collectionView)
+        self.delegate?.collectionTableView?(self, didSelectItemAt: realIndexPath)
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, shouldDeselectItemAt indexPath: IndexPath) -> Bool {
+        let realIndexPath = realIndexPathForCollectionView(indexPath, collectionView: collectionView)
+        return self.delegate?.collectionTableView?(self, shouldDeselectItemAt: realIndexPath) ?? true
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let realIndexPath = realIndexPathForCollectionView(indexPath, collectionView: collectionView)
+        self.delegate?.collectionTableView?(self, didDeselectItemAt: realIndexPath)
+    }
+}
+
+
 // MARK: UICollectionViewDataSource
 
 extension CollectionTableView: UICollectionViewDataSource {

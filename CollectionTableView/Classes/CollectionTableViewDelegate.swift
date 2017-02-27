@@ -11,6 +11,26 @@ import UIKit
 @objc
 public protocol CollectionTableViewDelegate {
     
+    // MARK: Cell Selection
+    
+    @objc optional func collectionTableView(
+        _ tableView: CollectionTableView,
+        shouldSelectItemAt indexPath: IndexPath)
+        -> Bool
+    
+    @objc optional func collectionTableView(
+        _ tableView: CollectionTableView,
+        didSelectItemAt indexPath: IndexPath)
+    
+    @objc optional func collectionTableView(
+        _ tableView: CollectionTableView,
+        shouldDeselectItemAt indexPath: IndexPath)
+        -> Bool
+    
+    @objc optional func collectionTableView(
+        _ tableView: CollectionTableView,
+        didDeselectItemAt indexPath: IndexPath)
+    
     // MARK: Item Configuration
     
     @objc optional func collectionTableView(
