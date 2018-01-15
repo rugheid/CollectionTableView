@@ -55,7 +55,7 @@ class ExampleCollectionTableViewController: CollectionTableViewController {
     
     // MARK: CollectionSectionedTableViewDataSource
     
-    func numberOfSectionsInCollectionSectionedTableView(_ tableView: CollectionTableView) -> Int {
+    func numberOfSectionsInCollectionTableView(_ tableView: CollectionTableView) -> Int {
         return 5
     }
     

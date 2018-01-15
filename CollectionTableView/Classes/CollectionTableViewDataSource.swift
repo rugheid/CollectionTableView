@@ -25,11 +25,11 @@ public protocol CollectionTableViewDataSource {
     
     // MARK: Configuration
     
-    @objc optional func numberOfSectionsInCollectionSectionedTableView(
+    @objc optional func numberOfSectionsInCollectionTableView(
         _ tableView: CollectionTableView)
         -> Int
     
-    @objc optional func sectionIndexTitlesForCollectionSectionedTableView(
+    @objc optional func sectionIndexTitlesForCollectionTableView(
         _ tableView: CollectionTableView)
         -> [String]?
     

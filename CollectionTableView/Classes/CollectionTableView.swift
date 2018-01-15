@@ -308,7 +308,7 @@ extension CollectionTableView: UITableViewDelegate {
 extension CollectionTableView: UITableViewDataSource {
     
     public func numberOfSections(in tableView: UITableView) -> Int {
-        let nrOfSections = self.dataSource?.numberOfSectionsInCollectionSectionedTableView?(self) ?? 1
+        let nrOfSections = self.dataSource?.numberOfSectionsInCollectionTableView?(self) ?? 1
         self.collectionViews = Array<UICollectionView?>(repeating: nil, count: nrOfSections)
         return nrOfSections
     }
@@ -318,7 +318,7 @@ extension CollectionTableView: UITableViewDataSource {
     }
     
     public func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-        return self.dataSource?.sectionIndexTitlesForCollectionSectionedTableView?(self)
+        return self.dataSource?.sectionIndexTitlesForCollectionTableView?(self)
     }
     
     public func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
